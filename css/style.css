@@ -1,0 +1,211 @@
+/* Configuración general */
+.lilita-one-regular {
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body {
+    font-family: "Lilita One", serif;
+    background-color: #0A2A5E;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0A2A5E;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu-hamburguesa {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+
+/* MENU */
+nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* VIDEO */
+.video-container {
+    margin: 20px auto;
+}
+
+/* SECCIÓN IMAGEN + TEXTO */
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameplay-img {
+    width: 90%;
+    max-width: 300px;
+}
+
+.text-box {
+    text-align: center;
+    max-width: 400px;
+}
+
+/* BOTONES DE DESCARGA */
+.download-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.download-section img {
+    width: 120px;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+/* Redes Sociales */
+.social-media {
+    text-align: left;
+}
+
+.social-media p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Enlaces Legales */
+.legal-links {
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.legal-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+/* Logo de Supercell */
+.supercell-logo img {
+    width: 80px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .legal-links {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .supercell-logo {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .gameplay-img {
+        width: 80%;
+    }
+    .download-section {
+        flex-direction: column;
+    }
+    .download-section img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+}
