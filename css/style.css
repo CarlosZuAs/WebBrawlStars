@@ -7,11 +7,17 @@
   
 body {
     font-family: "Lilita One", serif;
-    background-color: #0A2A5E;
+    /*background-color: #0A2A5E;*/
     color: white;
     text-align: center;
     margin: 0;
     padding: 0;
+
+    background-image: url('../img/brawlfondo.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
 }
 
 /* HEADER */
