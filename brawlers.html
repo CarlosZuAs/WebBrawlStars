@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Brawlers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="javascript/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/brawl-stars-logo.png" alt="Brawl Stars Logo" class="logo">
+        <div class="menu-hamburguesa" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Gamemodes</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">???</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="character-selection">
+            <div class="attacks">
+                <div class="basic">
+                    <h1>Ataque</h1>
+                    <h2 id="basic-name">Lanzamonedas</h2>
+                    <p id="basic-desc">"Dispara una bolsa de monedas de oro. Si la bolsa alcanza al enemigo, las monedas salen disparadas e impactan a los enemigos que se encuentren detrás del objetivo principal."</p>    
+                </div>
+                <div class="super">
+                    <h1>Súper</h1>
+                    <h2 id="super-name">Cañonazo</h2>
+                    <p id="super-desc">"Penny despliega su cañón, que dispara a los enemigos a larga distancia aunque haya obstáculos de por medio."</p>    
+                </div>
+            </div>
+            <div class="brawlers">
+                    <img id="character-image" src="img/Jessie_Skin-Default.webp" alt="Personaje">
+                    <h2 id="character-name">Jessie</h2>
+                    <button id="prev">&#9664;</button>
+                    <div class="character-icons">
+                        <img class="icon" src="img/Jessie_Portrait.webp" alt="Jessie" data-index="0">
+                        <img class="icon" src="img/Spike_Portrait.webp" alt="Spike" data-index="1">
+                        <img class="icon" src="img/Dynamike_Portrait.webp" alt="Dynamike" data-index="2">
+                        <img class="icon" src="img/Frank_Portrait.webp" alt="Dynamike" data-index="3">
+                        <img class="icon" src="img/El_Primo_Portrait.webp" alt="Dynamike" data-index="4">
+                    </div>                    
+                    <button id="next">&#9654;</button>
+            </div>
+            <div class="gadgets">
+                <h2>Pasivas</h2>
+                <p id="passive-text">Aquí va la descripción de la pasiva.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -7,16 +7,16 @@
   
 body {
     font-family: "Lilita One", serif;
-    /*background-color: #0A2A5E;*/
+    background-color: #0A2A5E;
     color: white;
     text-align: center;
     margin: 0;
     padding: 0;
 
-    background-image: url('../img/brawlfondo.webp'); 
+    /*background-image: url('../img/brawlfondo.webp'); 
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat; */
     
 }
 
@@ -169,6 +169,58 @@ footer {
 .supercell-logo img {
     width: 80px;
 }
+
+
+
+/* BRAWLERS */
+
+.character-selection{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.attacks{
+    width: 25%;
+}
+
+.brawlers{
+    width: 25%;
+}
+
+.brawlers img{
+ height: 25%;
+
+}
+
+
+.gadgets{
+    width: 25%;
+}
+
+
+.character-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.character-icons img {
+    width: 50px; /* Ajusta según el tamaño deseado */
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.5; /* Para que los no seleccionados estén más oscuros */
+}
+
+.character-icons img.selected {
+    transform: scale(1.2); /* Destaca el icono seleccionado */
+    opacity: 1;
+}
+
+
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
