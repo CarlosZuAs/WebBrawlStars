@@ -6,8 +6,7 @@ function toggleMenu() {
         menu.style.display = "block";
     }
 }
-
-
+       
 
 
 
@@ -21,8 +20,14 @@ $(document).ready(function () {
             basicD: "Una bola que es eléctrica.",
             superN: "Torreta",
             superD: "Una torreta automática.",
-            passive: "La bola rebota.",
-            icons: "img/Jessie_Portrait.webp"
+            icons: "img/Jessie_Portrait.webp",
+            skills: [
+                { icon: "img/Jessie_Portrait.webp", title: "Sobrecarga", text: "Aumenta el daño de la torreta." },
+                { icon: "img/skill2.webp", title: "Ralentización", text: "La torreta ralentiza enemigos." },
+                { icon: "img/skill3.webp", title: "Reparación", text: "La torreta se repara sola." },
+                { icon: "img/skill4.webp", title: "Rebote Extra", text: "Los ataques rebotan más veces." },
+                { icon: "img/skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
+            ]
         },
         {
             name: "Spike",
@@ -31,8 +36,14 @@ $(document).ready(function () {
             basicD: "Te cruza la cara.",
             superN: "Granada Pinchosa",
             superD: "Lanza una granada que pincha.",
-            passive: "La granada explota en pinchitos.",
-            icons: "img/Spike_Portrait.webp"
+            icons: "img/Spike_Portrait.webp",
+            skills: [
+                { icon: "img/skill1.webp", title: "Explosión Mayor", text: "Aumenta el área de la granada." },
+                { icon: "img/skill2.webp", title: "Espinas Persistentes", text: "Los picos duran más tiempo." },
+                { icon: "img/skill3.webp", title: "Sprint Espinoso", text: "Gana velocidad dentro del súper." },
+                { icon: "img/skill4.webp", title: "Curación Espinosa", text: "Los ataques curan a Spike." },
+                { icon: "img/skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
+            ]
         },
         {
             name: "Dynamike",
@@ -41,8 +52,14 @@ $(document).ready(function () {
             basicD: "BOOM.",
             superN: "Voladura",
             superD: "KABOOM",
-            passive: "Todo explota.",
-            icons: "img/Dynamike_Portrait.webp"
+            icons: "img/Dynamike_Portrait.webp",
+            skills: [
+                { icon: "img/skill1.webp", title: "Sobrecarga", text: "Aumenta el daño de la torreta." },
+                { icon: "img/skill2.webp", title: "Ralentización", text: "La torreta ralentiza enemigos." },
+                { icon: "img/skill3.webp", title: "Reparación", text: "La torreta se repara sola." },
+                { icon: "img/skill4.webp", title: "Rebote Extra", text: "Los ataques rebotan más veces." },
+                { icon: "img/skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
+            ]
         },
         {
             name: "Frank",
@@ -51,8 +68,14 @@ $(document).ready(function () {
             basicD: "Te parte la cabesa.",
             superN: "Megamartillazo",
             superD: "Te revienta.",
-            passive: "Si le pegas se cabrea.",
-            icons: "img/Frank_Portrait.webp"
+            icons: "img/Frank_Portrait.webp",
+            skills: [
+                { icon: "img/skill1.webp", title: "Explosión Mayor", text: "Aumenta el área de la granada." },
+                { icon: "img/skill2.webp", title: "Espinas Persistentes", text: "Los picos duran más tiempo." },
+                { icon: "img/skill3.webp", title: "Sprint Espinoso", text: "Gana velocidad dentro del súper." },
+                { icon: "img/skill4.webp", title: "Curación Espinosa", text: "Los ataques curan a Spike." },
+                { icon: "img/skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
+            ]
         },
         {
             name: "El Primo",
@@ -61,12 +84,20 @@ $(document).ready(function () {
             basicD: "BUENAS NOCHES",
             superN: "Salto épico",
             superD: "EEEEEEL PRIMOOOO",
-            passive: "Es EL PRIMO.",
-            icons: "img/El_Primo_Portrait.webp"
+            icons: "img/El_Primo_Portrait.webp",
+            skills: [
+                { icon: "img/skill1.webp", title: "Explosión Mayor", text: "Aumenta el área de la granada." },
+                { icon: "img/skill2.webp", title: "Espinas Persistentes", text: "Los picos duran más tiempo." },
+                { icon: "img/skill3.webp", title: "Sprint Espinoso", text: "Gana velocidad dentro del súper." },
+                { icon: "img/skill4.webp", title: "Curación Espinosa", text: "Los ataques curan a Spike." },
+                { icon: "img/skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
+            ]
         }
     ];
 
     let currentIndex = 0;
+    let selectedSkill = 0;
+
 
     // Función para actualizar el personaje mostrado
     function updateCharacter() {
@@ -77,10 +108,19 @@ $(document).ready(function () {
         $("#basic-desc").text(char.basicD);
         $("#super-name").text(char.superN);
         $("#super-desc").text(char.superD);
-        $("#passive-text").text(char.passive);
+
+        $(".passive-icon").each(function (index) {
+            $(this).attr("src", char.skills[index].icon);
+        });
+
+        $("#passive-title").text(char.skills[selectedSkill].title);
+        $("#passive-text").text(char.skills[selectedSkill].text);
+
 
         $(".character-icons img").removeClass("selected");
         $(`.character-icons img[data-index=${currentIndex}]`).addClass("selected");
+        $(`.passive-icon img[data-index=${selectedSkill}]`).addClass("selected");
+
     }
 
 
@@ -110,6 +150,12 @@ $(document).ready(function () {
 
     $(".character-icons img").click(function () {
         currentIndex = $(this).data("index");
+        updateCharacter();
+    });
+
+
+    $(".passive-icon").click(function () {
+        selectedSkill = $(this).data("index");
         updateCharacter();
     });
 
