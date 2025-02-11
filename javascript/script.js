@@ -9,6 +9,9 @@ function toggleMenu() {
        
 
 
+/* SELECCION BRAWLER */
+
+
 
 $(document).ready(function () {
     // Lista de personajes con sus datos
@@ -162,3 +165,49 @@ $(document).ready(function () {
     // Inicializar con el primer personaje
     updateCharacter();
 });
+
+
+
+
+/* OPCIONES */
+
+
+        $(document).ready(function() {
+            $("#toggleMenu").click(function() {
+                $("#menuContainer").css("right", "0");
+            });
+
+            $("#closeMenu").click(function() {
+                $("#menuContainer").css("right", "-300px");
+            });
+
+            $(".menuButton").click(function() {
+                var target = $(this).data("target");
+                if (target) {
+                    $(".menuScreen").removeClass("active");
+                    $(target).addClass("active");
+                }
+            });
+
+            $("#goToIndex").click(function() {
+                window.location.href = "index.html";
+            });
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+

@@ -17,12 +17,55 @@
         <div class="menu-hamburguesa" onclick="toggleMenu()">☰</div>
         <nav id="menu">
             <ul>
-                <li><a href="#">Characters</a></li>
+                <li><a href="brawlers.html">Characters</a></li>
                 <li><a href="#">Gamemodes</a></li>
                 <li><a href="#">Maps</a></li>
-                <li><a href="#">???</a></li>
+                <li><a href="options.html">Options</a></li>
             </ul>
         </nav>
+        <!-- Botón para abrir el menú -->
+    <button id="toggleMenu">☰</button>
+
+    <!-- Contenedor principal del menú -->
+    <div id="menuContainer">
+        <div class="menuScreen active" id="mainMenu">
+            <button class="menuButton" data-target="#menuAjustes">Ajustes</button>
+            <button class="menuButton" id="goToIndex">Inicio</button>
+            <button class="menuButton" id="closeMenu">Salir</button>
+        </div>
+        
+        <div class="menuScreen" id="menuAjustes">
+            <button class="menuButton backButton" data-target="#mainMenu">⬅ Atrás</button>
+            <button class="menuButton" data-target="#menuVolumen">Volumen</button>
+            <button class="menuButton" data-target="#menuResolucion">Resolución</button>
+            <button class="menuButton" data-target="#menuGraficos">Gráficos</button>
+        </div>
+
+        <div class="menuScreen" id="menuVolumen">
+            <button class="menuButton backButton" data-target="#menuAjustes">⬅ Atrás</button>
+            <label>Volumen:</label>
+            <input type="range" min="0" max="100" value="50">
+        </div>
+
+        <div class="menuScreen" id="menuResolucion">
+            <button class="menuButton backButton" data-target="#menuAjustes">⬅ Atrás</button>
+            <label>Resolución:</label>
+            <select>
+                <option>1920x1080</option>
+                <option>1280x720</option>
+                <option>800x600</option>
+            </select>
+        </div>
+
+        <div class="menuScreen" id="menuGraficos">
+            <button class="menuButton backButton" data-target="#menuAjustes">⬅ Atrás</button>
+            <button class="menuButton">High</button>
+            <button class="menuButton">Med</button>
+            <button class="menuButton">Low</button>
+        </div>
+    </div>
+
+        
     </header>
     <main>
         <div class="character-selection">
