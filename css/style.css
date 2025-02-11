@@ -240,9 +240,25 @@ footer {
 }
 
 .passive-icon {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
+}
+
+#passive-title{
+    font-size: 32px;
+}
+
+#basic-name{
+    font-size: 26px;
+}
+
+#super-name{
+    font-size: 26px;
+}
+
+#character-name{
+    font-size: 32px;
 }
 
 .character-selection p{

@@ -25,7 +25,7 @@ $(document).ready(function () {
             superD: "Jessie despliega una torreta capaz de disparar automáticamente. ¡100% hecha de materiales reciclados!",
             icons: "img/Jessie_Portrait.webp",
             skills: [
-                { icon: "img/jessie_skill1.webp", title: "Bujía", text: "La torreta de Jessie lanza una onda sísmica que ralentiza a todos los rivales que se encuentren dentro del área de efecto." },
+                { icon: "img/jessie_skill1.png", title: "Bujía", text: "La torreta de Jessie lanza una onda sísmica que ralentiza a todos los rivales que se encuentren dentro del área de efecto." },
                 { icon: "img/jessie_skill2.webp", title: "Intensificador", text: "La velocidad de ataque de la chatarreta se duplica durante 5 segundos." },
                 { icon: "img/jessie_skill3.webp", title: "Energizante", text: "Jessie puede recuperar 1060 puntos de salud de su torreta con solo dispararle." },
                 { icon: "img/jessie_skill4.webp", title: "Rebote electrizante", text: "La chatarreta dispara esferas de energía que rebotan entre los enemigos. Tras cada rebote, el alcance de las esferas aumenta un 51% del normal. " },
