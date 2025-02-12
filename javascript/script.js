@@ -171,28 +171,27 @@ $(document).ready(function () {
 
 /* OPCIONES */
 
+$(document).ready(function() {
+    $("#toggleMenu").click(function() {
+        $("#menuContainer").css("right", "0");
+    });
 
-        $(document).ready(function() {
-            $("#toggleMenu").click(function() {
-                $("#menuContainer").css("right", "0");
-            });
+    $("#closeMenu").click(function() {
+        $("#menuContainer").css("right", "-300px");
+    });
 
-            $("#closeMenu").click(function() {
-                $("#menuContainer").css("right", "-300px");
-            });
+    $(".menuButton").click(function() {
+        var target = $(this).data("target");
+        if (target) {
+            $(".menuScreen").removeClass("active");
+            $(target).addClass("active");
+        }
+    });
 
-            $(".menuButton").click(function() {
-                var target = $(this).data("target");
-                if (target) {
-                    $(".menuScreen").removeClass("active");
-                    $(target).addClass("active");
-                }
-            });
-
-            $("#goToIndex").click(function() {
-                window.location.href = "index.html";
-            });
-        });
+    $("#goToIndex").click(function() {
+        window.location.href = "index.html";
+    });
+});
 
 
 
