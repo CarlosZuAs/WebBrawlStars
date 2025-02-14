@@ -191,6 +191,18 @@ $(document).ready(function() {
     $("#goToIndex").click(function() {
         window.location.href = "index.html";
     });
+
+    $("#goToCharacters").click(function() {
+        window.location.href = "brawlers.html";
+    });
+
+    $("#goToMaps").click(function() {
+        window.location.href = "events.html";
+    });
+
+    $("#goToHUD").click(function() {
+        window.location.href = "hud.html";
+    });
 });
 
 

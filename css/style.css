@@ -110,7 +110,7 @@ nav ul li a {
 }
 
 /* FOOTER */
-footer {
+#index_footer {
     background-color: black;
     color: white;
     display: flex;
@@ -178,15 +178,18 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    padding: 0px 0px 5% 0px
 }
 
 .attacks{
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .brawlers{
     width: 25%;
+    
 }
 
 #character-image{
@@ -248,6 +251,12 @@ footer {
 #passive-title{
     font-size: 32px;
 }
+.passive-square{
+    margin: 5% 0px 0px 0px;
+    background-color: #1578e3;
+    border: 2px solid black;
+    border-radius: 1%;
+}
 
 #basic-name{
     font-size: 26px;
@@ -263,6 +272,34 @@ footer {
 
 .character-selection p{
     font-size: 22px;
+}
+
+.basic h1{
+    color:#ef1919;
+    text-shadow: 
+        -2px -2px 0 black,  
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+}
+
+.super h1{
+    color:#fcc736;
+    text-shadow: 
+        -2px -2px 0 black,  
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+}
+
+
+.passive-square h2{
+    color:#05b705;
+    text-shadow: 
+        -2px -2px 0 black,  
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
 }
 
 

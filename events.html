@@ -13,8 +13,9 @@
 </head>
 <body>
     <header>
-        <img src="img/brawl-stars-logo.png" alt="Brawl Stars Logo" class="logo">
-        <div class="menu-hamburguesa" onclick="toggleMenu()">☰</div>
+        
+        <img src="img/brawl-stars-logo.png" alt="Brawl Stars Logo" onclick="location.href='index.html'" style="cursor: pointer;" class="logo">
+        <!--<div class="menu-hamburguesa" onclick="toggleMenu()">☰</div>
         <nav id="menu">
             <ul>
                 <li><a href="brawlers.html">Characters</a></li>
@@ -22,15 +23,19 @@
                 <li><a href="#">Maps</a></li>
                 <li><a href="#">Options</a></li>
             </ul>
-        </nav>
+        </nav>-->
+
         <!-- Botón para abrir el menú -->
     <button id="toggleMenu">☰</button>
 
     <!-- Contenedor principal del menú -->
     <div id="menuContainer">
         <div class="menuScreen active" id="mainMenu">
-            <button class="menuButton" data-target="#menuAjustes">Ajustes</button>
             <button class="menuButton" id="goToIndex">Inicio</button>
+            <button class="menuButton" id="goToCharacters">Brawlers</button>
+            <button class="menuButton" id="goToMaps">Eventos</button>
+            <button class="menuButton" id="goToHUD">HUD</button>
+            <button class="menuButton" data-target="#menuAjustes">Ajustes</button>
             <button class="menuButton" id="closeMenu">Salir</button>
         </div>
         
