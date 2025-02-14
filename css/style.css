@@ -5,7 +5,9 @@
     font-style: normal;
   }
   
-body {
+  
+
+  body {
     font-family: "Lilita One", serif;
     background-color: #0A2A5E;
     color: white;
@@ -13,19 +15,18 @@ body {
     margin: 0;
     padding: 0;
 
-    /*background-image: url('../img/brawlfondo.webp'); 
+    background-image: url('../img/background4.webp'); 
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; */
     
 }
 
 /* HEADER */
 header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0A2A5E;
     padding: 15px 20px;
 }
 
@@ -110,15 +111,21 @@ nav ul li a {
 }
 
 /* FOOTER */
-#index_footer {
+footer {
+
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 0px;
     flex-wrap: wrap;
+
+    
+    
 }
+
+
 
 .footer-container {
     display: flex;
@@ -129,7 +136,7 @@ nav ul li a {
 
 /* Redes Sociales */
 .social-media {
-    text-align: left;
+    text-align: center;
 }
 
 .social-media p {
@@ -169,6 +176,28 @@ nav ul li a {
 .supercell-logo img {
     width: 80px;
 }
+
+
+
+
+#map-image{
+    padding: 0px 0px 160px;
+}
+
+#crecer {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 16px;
+}
+
+#crecer:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+}
+
+
+
+
+
 
 
 
@@ -302,6 +331,63 @@ nav ul li a {
          2px  2px 0 black;
 }
 
+/* carrusel */
+
+    .carrusel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+ 
+    }
+
+    .carrusel {
+            position: relative;
+            width: 640px;
+            height: 360px;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+    .carrusel img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+    .carrusel img.active {
+            display: block;
+        }
+
+    .boton {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+    .boton:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+
+
+
+
+
+
+
+
 
 
 /* OPTIONS */
@@ -310,7 +396,7 @@ nav ul li a {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: #333;
+    background: #040202;
     color: white;
     border: none;
     padding: 10px;
@@ -322,7 +408,7 @@ nav ul li a {
     right: -300px;
     width: 300px;
     height: 100vh;
-    background: #222;
+    background: #4a4a4a;
     transition: right 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -336,7 +422,7 @@ nav ul li a {
     display: flex;
 }
 .menuButton {
-    background: #444;
+    background: #040202;
     color: white;
     border: none;
     padding: 10px;
@@ -345,8 +431,37 @@ nav ul li a {
     text-align: left;
 }
 .backButton {
-    background: #666;
+    background: #040202;
 }
+
+
+
+
+
+
+
+.attack-b {
+    position: absolute;
+    top: 900px;
+    left: 60%;
+    width: 80px;
+    height: auto;
+}
+.super-b {
+    position: absolute;
+    top: 940px;
+    left: 52%;
+    width: 80px;
+    height: auto;
+}
+.hyper-b {
+    position: absolute;
+    top: 860px;
+    left: 52%;
+    width: 80px;
+    height: auto;
+}
+
 
 
 
@@ -357,6 +472,15 @@ nav ul li a {
 
 
 /* RESPONSIVE */
+@media (min-width: 769px){
+    #footer-esp{
+        position:fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     footer {
         flex-direction: column;
@@ -382,6 +506,10 @@ nav ul li a {
 
     .supercell-logo {
         margin-top: 10px;
+    }
+    .video-brawl{
+        width: 400px;
+        height: 225px;
     }
 }
 

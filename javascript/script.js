@@ -206,6 +206,32 @@ $(document).ready(function() {
 });
 
 
+/* EVENTOS CARRUSEL */
+
+$(document).ready(function() {
+    let current = 0;
+    let images = $(".carrusel img");
+    let total = images.length;
+
+    function showImage(index) {
+        images.removeClass("active").fadeOut(300);
+        images.eq(index).addClass("active").fadeIn(300);
+    }
+
+    function nextImage() {
+        current = (current + 1) % total;
+        showImage(current);
+    }
+
+    function prevImage() {
+        current = (current - 1 + total) % total;
+        showImage(current);
+    }
+
+    $(".next").click(nextImage);
+    $(".prev").click(prevImage);
+});
+
 
 
 

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HUD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="javascript/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <header>
+        
+        <img src="img/brawl-stars-logo.png" alt="Brawl Stars Logo" onclick="location.href='index.html'" style="cursor: pointer;" class="logo" id="crecer">
+        <!--<div class="menu-hamburguesa" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="brawlers.html">Characters</a></li>
+                <li><a href="#">Gamemodes</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">Options</a></li>
+            </ul>
+        </nav>-->
+
+        <!-- Botón para abrir el menú -->
+    <button id="toggleMenu">☰</button>
+
+    <!-- Contenedor principal del menú -->
+    <div id="menuContainer">
+        <div class="menuScreen active" id="mainMenu">
+            <button class="menuButton" id="goToIndex">Inicio</button>
+            <button class="menuButton" id="goToCharacters">Brawlers</button>
+            <button class="menuButton" id="goToMaps">Eventos</button>
+            <button class="menuButton" id="goToHUD">HUD</button>
+            <button class="menuButton" data-target="#menuAjustes">Ajustes</button>
+            <button class="menuButton" id="closeMenu">Salir</button>
+        </div>
+        
+        <div class="menuScreen" id="menuAjustes">
+            <button class="menuButton backButton" data-target="#mainMenu">⬅ Atrás</button>
+            <button class="menuButton" data-target="#menuVolumen">Volumen</button>
+            <button class="menuButton" data-target="#menuResolucion">Resolución</button>
+            <button class="menuButton" data-target="#menuGraficos">Gráficos</button>
+        </div>
+
+        <div class="menuScreen" id="menuVolumen">
+            <button class="menuButton backButton" data-target="#menuAjustes">⬅ Atrás</button>
+            <label>Volumen:</label>
+            <input type="range" min="0" max="100" value="50">
+        </div>
+
+        <div class="menuScreen" id="menuResolucion">
+            <button class="menuButton backButton" data-target="#menuAjustes">⬅ Atrás</button>
+            <label>Resolución:</label>
+            <select>
+                <option>1920x1080</option>
+                <option>1280x720</option>
+                <option>800x600</option>
+            </select>
+        </div>
+
+        <div class="menuScreen" id="menuGraficos">
+            <button class="menuButton backButton" data-target="#menuAjustes">⬅ Atrás</button>
+            <button class="menuButton">Alto</button>
+            <button class="menuButton">Medio</button>
+            <button class="menuButton">Bajo</button>
+        </div>
+    </div>
+
+        
+    </header>
+    <main>
+        <div>
+            <img id="map-image" src="img/atraco.png" alt="HUD">
+        </div>
+        <img class="attack-b" src="img/attack.png" id="crecer">
+        <img class="super-b" src="img/super.png" id="crecer">
+        <img class="hyper-b" src="img/hyper.png" id="crecer">
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <p>FOLLOW BRAWL STARS ON</p>
+                <div class="icons">
+                    <a href="#"><img src="img/reddit2.png" alt="Reddit"></a>
+                    <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="img/facebook.png" alt="Discord"></a>
+                    <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="img/twitter-logo-silhouette-1.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/tiktok.webp" alt="TikTok"></a>
+                </div>
+            </div>
+        
+            <div class="supercell-logo">
+                <img src="img\supercell-logo-white-transp.png" alt="Supercell Logo">
+            </div>
+        </div>
+        
+        <div class="legal-links">
+            <a href="#">TERMS OF SERVICE</a> • 
+            <a href="#">PRIVACY POLICY</a> • 
+            <a href="#">PARENTS' GUIDE</a> • 
+            <a href="#">SAFE AND FAIR PLAY POLICY</a> • 
+            <a href="#">OTHER LEGAL DOCS</a> • 
+            <a href="#">MEDIA CENTER</a> • 
+            <a href="#">OLD BRAWL</a> • 
+            <a href="#">MANAGE COOKIES</a>
+        </div>
+    </footer>
+</body>
+</html>
