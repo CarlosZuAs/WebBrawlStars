@@ -234,11 +234,17 @@ $(document).ready(function() {
 
 
 
+/* SONIDO */
 
+let activeSounds = {};
 
-
-
-
+function playSound(soundFile) {
+    if (!activeSounds[soundFile] || activeSounds[soundFile].ended) {
+        activeSounds[soundFile] = new Audio(soundFile);
+        activeSounds[soundFile].volume=0.25
+        activeSounds[soundFile].play();
+    }
+}
 
 
 
