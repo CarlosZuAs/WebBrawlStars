@@ -22,11 +22,11 @@ $(document).ready(function () {
             superD: "Una torreta automática.",
             icons: "img/Jessie_Portrait.webp",
             skills: [
-                { icon: "img/Jessie_Portrait.webp", title: "Sobrecarga", text: "Aumenta el daño de la torreta." },
-                { icon: "img/skill2.webp", title: "Ralentización", text: "La torreta ralentiza enemigos." },
-                { icon: "img/skill3.webp", title: "Reparación", text: "La torreta se repara sola." },
-                { icon: "img/skill4.webp", title: "Rebote Extra", text: "Los ataques rebotan más veces." },
-                { icon: "img/skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
+                { icon: "img/jessie_skill1.webp", title: "Sobrecarga", text: "Aumenta el daño de la torreta." },
+                { icon: "img/jessie_skill2.webp", title: "Ralentización", text: "La torreta ralentiza enemigos." },
+                { icon: "img/jessie_skill3.webp", title: "Reparación", text: "La torreta se repara sola." },
+                { icon: "img/jessie_skill4.webp", title: "Rebote Extra", text: "Los ataques rebotan más veces." },
+                { icon: "img/jessie_skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
             ]
         },
         {
@@ -38,11 +38,11 @@ $(document).ready(function () {
             superD: "Lanza una granada que pincha.",
             icons: "img/Spike_Portrait.webp",
             skills: [
-                { icon: "img/skill1.webp", title: "Explosión Mayor", text: "Aumenta el área de la granada." },
-                { icon: "img/skill2.webp", title: "Espinas Persistentes", text: "Los picos duran más tiempo." },
-                { icon: "img/skill3.webp", title: "Sprint Espinoso", text: "Gana velocidad dentro del súper." },
-                { icon: "img/skill4.webp", title: "Curación Espinosa", text: "Los ataques curan a Spike." },
-                { icon: "img/skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
+                { icon: "img/spike_skill1.webp", title: "Explosión Mayor", text: "Aumenta el área de la granada." },
+                { icon: "img/spike_skill2.webp", title: "Espinas Persistentes", text: "Los picos duran más tiempo." },
+                { icon: "img/spike_skill3.webp", title: "Sprint Espinoso", text: "Gana velocidad dentro del súper." },
+                { icon: "img/spike_skill4.webp", title: "Curación Espinosa", text: "Los ataques curan a Spike." },
+                { icon: "img/spike_skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
             ]
         },
         {
@@ -54,27 +54,27 @@ $(document).ready(function () {
             superD: "KABOOM",
             icons: "img/Dynamike_Portrait.webp",
             skills: [
-                { icon: "img/skill1.webp", title: "Sobrecarga", text: "Aumenta el daño de la torreta." },
-                { icon: "img/skill2.webp", title: "Ralentización", text: "La torreta ralentiza enemigos." },
-                { icon: "img/skill3.webp", title: "Reparación", text: "La torreta se repara sola." },
-                { icon: "img/skill4.webp", title: "Rebote Extra", text: "Los ataques rebotan más veces." },
-                { icon: "img/skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
+                { icon: "img/dyna_skill1.webp", title: "Sobrecarga", text: "Aumenta el daño de la torreta." },
+                { icon: "img/dyna_skill2.webp", title: "Ralentización", text: "La torreta ralentiza enemigos." },
+                { icon: "img/dyna_skill3.webp", title: "Reparación", text: "La torreta se repara sola." },
+                { icon: "img/dyna_skill4.webp", title: "Rebote Extra", text: "Los ataques rebotan más veces." },
+                { icon: "img/dyna_skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
             ]
         },
         {
             name: "Frank",
             image: "img/Frank_Skin-Default.png",
             basicN: "Martillazo",
-            basicD: "Te parte la cabesa.",
-            superN: "Megamartillazo",
-            superD: "Te revienta.",
+            basicD: "Frank se toma su tiempo para dar su martillazo, pero el impacto es tan fuerte que genera una gran conmoción.",
+            superN: "Terapia de choque",
+            superD: "Este golpe de Frank genera tal conmoción que destruye todo lo que se encuentra a su alrededor y aturde a los enemigos.",
             icons: "img/Frank_Portrait.webp",
             skills: [
-                { icon: "img/skill1.webp", title: "Explosión Mayor", text: "Aumenta el área de la granada." },
-                { icon: "img/skill2.webp", title: "Espinas Persistentes", text: "Los picos duran más tiempo." },
-                { icon: "img/skill3.webp", title: "Sprint Espinoso", text: "Gana velocidad dentro del súper." },
-                { icon: "img/skill4.webp", title: "Curación Espinosa", text: "Los ataques curan a Spike." },
-                { icon: "img/skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
+                { icon: "img/frank_skill1.webp", title: "Cancelación de Ruido", text: "Frank puede volverse inmune momentáneamente a todo aturdimiento, ralentización o impacto hacia atrás." },
+                { icon: "img/frank_skill2.webp", title: "Atracción irresistible", text: "El siguiente ataque de Frank atraerá a los rivales hacia él y les hará el doble de daño." },
+                { icon: "img/frank_skill3.webp", title: "Toma de Fuerza", text: "Frank roba el poder de un Brawler que derrota, aumentando su daño en un 25% durante 12 segundos." },
+                { icon: "img/frank_skill4.webp", title: "Esponja", text: "Frank gana 1340 de vida." },
+                { icon: "img/frank_skill5.webp", title: "Impacto Sísmico", text: "El súper de Frank ahora impacta a su alrededor." }
             ]
         },
         {
@@ -86,11 +86,11 @@ $(document).ready(function () {
             superD: "EEEEEEL PRIMOOOO",
             icons: "img/El_Primo_Portrait.webp",
             skills: [
-                { icon: "img/skill1.webp", title: "Explosión Mayor", text: "Aumenta el área de la granada." },
-                { icon: "img/skill2.webp", title: "Espinas Persistentes", text: "Los picos duran más tiempo." },
-                { icon: "img/skill3.webp", title: "Sprint Espinoso", text: "Gana velocidad dentro del súper." },
-                { icon: "img/skill4.webp", title: "Curación Espinosa", text: "Los ataques curan a Spike." },
-                { icon: "img/skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
+                { icon: "img/primo_skill1.webp", title: "Explosión Mayor", text: "Aumenta el área de la granada." },
+                { icon: "img/primo_skill2.webp", title: "Espinas Persistentes", text: "Los picos duran más tiempo." },
+                { icon: "img/primo_skill3.webp", title: "Sprint Espinoso", text: "Gana velocidad dentro del súper." },
+                { icon: "img/primo_skill4.webp", title: "Curación Espinosa", text: "Los ataques curan a Spike." },
+                { icon: "img/primo_skill5.webp", title: "Carga Rápida", text: "Carga su súper más rápido." }
             ]
         }
     ];
